@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weblite school</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  </head>
+  <body>
+    <!-- <div id="app1">{{ message }} {{msg}}</div> -->
+    <!-- <div id="app2" v-show="showText">{{ message }}</div> -->
+    <!-- <div id="app3">
+      <ul>
+        <li v-for="user in list">{{ user }}</li>
+      </ul>
+    </div> -->
+    <!-- <div id="app4">
+      <input type="text" v-model="userInput" />
+      {{ userInput }}
+    </div> -->
+    <!-- <div id="app5">
+      <span v-bind:title="title2">Hello every one</span>
+    </div> -->
+    <!-- <div id="app6">
+      <span v-on:click="clickHandler">Hello every one</span>
+    </div> -->
+    <div id="app7" v-on:click="clickHandler">
+      <ul>
+        <username-item v-for="user in list" :user="user"> </username-item>
+      </ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
